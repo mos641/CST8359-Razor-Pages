@@ -1,0 +1,16 @@
+﻿@page
+@model Lab5.Pages.ErrorModel
+@{
+}
+
+
+<h2>Error Encountered</h2>
+</br>
+Try again or navigate to another page.
+</br>
+@{
+    if (ViewData["errorMessage"] != null)
+    {
+    @:<span style="color:darkred;font-size:60%;">Additional Information: @ViewData["errorMessage"]</span>
+    }
+}
